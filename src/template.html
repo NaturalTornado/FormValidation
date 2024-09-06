@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+</head>
+<body>
+
+    <div class="header" id="header">Form Validation Project</div>
+
+    <form novalidate>
+        <fieldset id="fieldSet" class="fieldSet">
+            <!--Form Inputs:
+                - Email
+                - Country
+                - Zip Code
+                - Password
+                - Password Confirmation
+            -->
+
+            <div class="inputArea" id="inputArea">
+
+                    <label for="email">Email</label>
+                <input type="email" class="email" id="email" placeholder="john.doe@email.com"></input>
+
+            </div>
+
+            <div class="inputArea" id="inputArea">
+
+                    <label for="Country">Country</label>
+                <input type="text" class="Country" id="Country" placeholder="USA"></input>
+
+            </div>
+
+            <!--
+                <label for="CountrySelect">Select Country</label>
+            <input type="select" class="CountrySelect" id="CountrySelect" placeholder="Select Country"></input>
+            -->
+
+            <div class="inputArea" id="inputArea">
+
+                  <label for="CountrySelect">Select Country</label>
+                <select class="CountrySelect" id="CountrySelect">
+                    <option value="" disabled selected>Select Country</option>
+                    <option value="Australia">Australia</option>
+                    <option value="Belgium">Belgium</option>
+                    <option value="Brazil">Brazil</option>
+                    <option value="Canada">Canada</option>
+                    <option value="China">China</option>
+                    <option value="France">France</option>
+                    <option value="Germany">Germany</option>
+                    <option value="India">India</option>
+                    <option value="Indonesia">Indonesia</option>
+                    <option value="Italy">Italy</option>
+                    <option value="Japan">Japan</option>
+                    <option value="Mexico">Mexico</option>
+                    <option value="Netherlands">Netherlands</option>
+                    <option value="Poland">Poland</option>
+                    <option value="Russia">Russia</option>
+                    <option value="Saudi Arabia">Saudi Arabia</option>
+                    <option value="South Korea">South Korea</option>
+                    <option value="Spain">Spain</option>
+                    <option value="Sweden">Sweden</option>
+                    <option value="Switzerland">Switzerland</option>
+                    <option value="Taiwan">Taiwan</option>
+                    <option value="Thailand">Thailand</option>
+                    <option value="Turkey">Turkey</option>
+                    <option value="United Kingdom">United Kingdom</option>
+                    <option value="United States">United States</option>
+                </select>
+            
+            </div>
+
+
+             <div class="inputArea" id="inputArea">
+
+                    <label for="zipCode">Zip Code</label>
+                <input type="b number" class="zipCode" id="zipCode" placeholder="12345" min="00000" max="99999"></input>
+
+            </div>
+            
+            <div class="inputArea" id="inputArea">
+
+                    <label for="Password">Password</label>
+                <input type="text" password="" class="Password" id="Password" placeholder="Password"></input>
+
+            </div>
+
+            <div class="inputArea" id="inputArea">
+
+                    <label for="confirmPassword">Confirm Password</label>
+                <input type="text" text="" class="confirmPassword" id="confirmPassword" placeholder="Confirm Password"></input>
+            
+            </div>
+
+        </fieldset>
+
+
+        <div class="subButtonArea" id="subButtonArea">
+            <button class="submitBtn" id="submitBtn" type="submit">Submit</button>
+            
+        </div>
+    
+    </form>
+
+
+
+</body>
+</html>
